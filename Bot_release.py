@@ -3,9 +3,6 @@ import logging
 from settings import TG_TOKEN
 import sqlite3
 from datetime import datetime, timedelta
-import time
-import schedule
-from multiprocessing import *
 
 conn = sqlite3.connect("TelBD.db", check_same_thread=False, timeout=10)
 cursor = conn.cursor()
